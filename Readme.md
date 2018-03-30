@@ -1,7 +1,7 @@
 # Учебный проект «Код и Магия» [![Build status][travis-image]][travis-url]
 
 * Студент: [Женя Лаврик](https://up.htmlacademy.ru/javascript/13/user/494507).
-* Наставник: `Неизвестно`.
+* Наставник: `Александр Смирнов`.
 
 ---
 
