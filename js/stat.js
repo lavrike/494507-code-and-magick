@@ -33,10 +33,8 @@ var getMaxElement = function (times) {
 
 window.renderStatistics = function (ctx, names, times) {
   ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
-  //ctx.strokeRect(CLOUD_X + 10, CLOUD_Y + 10, CLOUD_WIDTH, CLOUD_HEIGHT);
   ctx.fillRect(CLOUD_X + 10, CLOUD_Y + 10, CLOUD_WIDTH, CLOUD_HEIGHT);
   ctx.fillStyle = 'white';
-  //ctx.strokeRect(CLOUD_X, CLOUD_Y, CLOUD_WIDTH, CLOUD_HEIGHT);
   ctx.fillRect(CLOUD_X, CLOUD_Y, CLOUD_WIDTH, CLOUD_HEIGHT);
 
   ctx.fillStyle = '#000';
@@ -52,7 +50,7 @@ window.renderStatistics = function (ctx, names, times) {
 
   for (var i = 0; i < times.length; i++) {
     var currentX = initialX + (GAP + barWidth) * i;
-    var currentY = (MAX_COLUMN_HEIGHT - (times[i] * step)) + initialY;
+    var currentY = (MAX_COLUMN_HEIGHT - (times[i] * step)) + initialYZ;
 
     ctx.fillStyle = getColor(names[i] === 'Вы');
     ctx.fillRect(currentX, (MAX_COLUMN_HEIGHT - (times[i] * step)) + initialY + lineHeight, barWidth, times[i] * step);
