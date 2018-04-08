@@ -50,7 +50,7 @@ window.renderStatistics = function (ctx, names, times) {
 
   for (var i = 0; i < times.length; i++) {
     var currentX = initialX + (GAP + barWidth) * i;
-    var currentY = (MAX_COLUMN_HEIGHT - (times[i] * step)) + initialYZ;
+    var currentY = (MAX_COLUMN_HEIGHT - (times[i] * step)) + initialY;
 
     ctx.fillStyle = getColor(names[i] === 'Вы');
     ctx.fillRect(currentX, (MAX_COLUMN_HEIGHT - (times[i] * step)) + initialY + lineHeight, barWidth, times[i] * step);
