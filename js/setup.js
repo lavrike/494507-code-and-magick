@@ -18,11 +18,6 @@ var similarWizardTemplate = document.querySelector('#similar-wizard-template')
     .content
     .querySelector('.setup-similar-item');
 
-var name_wizard = WIZARD_NAMES[Math.floor(Math.random()*WIZARD_NAMES.length)];
-var surnameWizard = SURNAMES[Math.floor(Math.random()*SURNAMES.length)];
-var randomCoatColor = COAT_COLORS[Math.floor(Math.random()*COAT_COLORS.length)];
-var randomEyeColor = EYES_COLORS[Math.floor(Math.random()*EYES_COLORS.length)];
-
 var wizards = [];
 
 var renderWizard = function (wizard) {
@@ -40,13 +35,13 @@ function getRandom(min, max) {
 }
 var fragment = document.createDocumentFragment();
 for (var i = 0; i < 4; i++) {
-  var name_wizard = WIZARD_NAMES[getRandom(0, WIZARD_NAMES.length)];
+  var nameWizard = WIZARD_NAMES[getRandom(0, WIZARD_NAMES.length)];
   var surnameWizard = SURNAMES[getRandom(0, SURNAMES.length)];
   var randomCoatColor = COAT_COLORS[getRandom(0, COAT_COLORS.length)];
   var randomEyeColor = EYES_COLORS[getRandom(0, EYES_COLORS.length)];
 
   var newWizard = {
-    name: name_wizard + ' ' + surnameWizard,
+    name: nameWizard + ' ' + surnameWizard,
     coatColor: randomCoatColor,
     eyeColor: randomEyeColor
   }
