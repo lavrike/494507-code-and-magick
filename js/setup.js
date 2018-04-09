@@ -29,7 +29,7 @@ var renderWizard = function (wizard) {
     wizard.eyeColor;
 
   return wizardElement;
-}
+};
 function getRandom(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
@@ -44,7 +44,7 @@ for (var i = 0; i < 4; i++) {
     name: nameWizard + ' ' + surnameWizard,
     coatColor: randomCoatColor,
     eyeColor: randomEyeColor
-  }
+  };
 
   wizards.push(newWizard);
   fragment.appendChild(renderWizard(wizards[i]));
