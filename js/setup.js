@@ -92,7 +92,7 @@ var popupEscPress = function (e) {
 setupOpen.addEventListener('click', function () {
   popupOpen();
   document.addEventListener('keydown', popupEscPress);
-})
+});
 
 setupOpen.addEventListener('keydown', function (e) {
   if (e.keyCode === ENTER_KEY) {
@@ -111,11 +111,11 @@ setupClose.addEventListener('keydown', function (e) {
 });
 
 var submitHandler = document.querySelector('.setup-submit');
-submitHandler.addEventListener('submit', function (){
+submitHandler.addEventListener('submit', function () {
   popupClose();
 });
 
-submitHandler.addEventListener('keydown', function (e){
+submitHandler.addEventListener('keydown', function (e) {
   if (e.keyCode === ENTER_KEY) {
     popupClose();
   }
