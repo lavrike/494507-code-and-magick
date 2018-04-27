@@ -33,7 +33,7 @@
     document.addEventListener('mousemove', mouseMoveHandler);
     document.addEventListener('mouseup', mouseUpHandler);
   });
-//нужно ли здесь создавать селектор, если он есть в другом модуле?
+
   var setupClose = document.querySelector('.setup-close');
   setupClose.addEventListener('click', function () {
     overlaySetup.style.top = '80px';

@@ -176,12 +176,6 @@
   var artifactsElement = document.querySelector('.setup-artifacts');
   var draggedItem = null;
 
-/*   var setDash = function (target) {
-    if (target.tagName.toLowerCase() !== 'img') {
-      target.style.outline = '2px dashed red';
-    }
-  }; */
-
   shopElement.addEventListener('dragstart', function (evt) {
 
     if (evt.target.tagName.toLowerCase() === 'img') {
