@@ -67,7 +67,7 @@
   </div>
 </header>
 
-<div class="overlay setup hidden">
+<div class="overlay setup hidden" draggable>
   <form action="https://js.dump.academy/code-and-magick"
         class="setup-wizard-form"
         method="post"
@@ -77,8 +77,8 @@
     <div class="setup-title">
       <div class="setup-user">
         <div class="upload">
-          <img class="setup-user-pic" src="./img/user-1.jpg"/>
           <input type="file" name="avatar">
+          <img class="setup-user-pic" src="./img/user-1.jpg"/>
         </div>
         <label>
           <input type="text" name="username" min="2"
@@ -202,6 +202,7 @@
 
 </script>
 <script src="js/setup.js"></script>
+<script src="js/dialog.js"></script>
 <script src="js/stat.js"></script>
 <script src="js/game.js"></script>
 
