@@ -1,7 +1,7 @@
 'use strict';
 
 (function () {
-  var WIZARD_NAMES = [
+  window.WIZARD_NAMES = [
     'Иван',
     'Хуан Себастьян',
     'Мария',
@@ -12,7 +12,7 @@
     'Вашингтон'
   ];
 
-  var EYES_COLORS = [
+  window.EYES_COLORS = [
     'black',
     'red',
     'blue',
@@ -20,7 +20,7 @@
     'green'
   ];
 
-  var COAT_COLORS = [
+  window.COAT_COLORS = [
     'rgb(101, 137, 164)',
     'rgb(241, 43, 107)',
     'rgb(146, 100, 161)',
@@ -29,7 +29,7 @@
     'rgb(0, 0, 0)'
   ];
 
-  var SURNAMES = [
+  window.SURNAMES = [
     'да Марья',
     'Верон',
     'Мирабелла',
@@ -40,7 +40,7 @@
     'Ирвинг'
   ];
 
-  var FIREBALL_COLORS = [
+  window.FIREBALL_COLORS = [
     '#ee4830',
     '#30a8ee',
     '#5ce6c0',
