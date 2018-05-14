@@ -183,7 +183,6 @@
       evt.dataTransfer.setData('text/plain', evt.target.alt);
       evt.dataTransfer.effectAllowed = 'copy';
     }
-    /* artifactsElement.style.outline = '2px dashed red'; */
   });
 
   artifactsElement.addEventListener('dragover', function (evt) {
